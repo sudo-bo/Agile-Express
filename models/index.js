@@ -42,7 +42,8 @@ Object.keys(db).forEach(modelName => {
   }
 });
 
-fs.appendFileSync('sequelize.log', '\n'); // Add extra newline at the end
+// Add extra newline at the end
+fs.appendFileSync('sequelize.log', '\n'); 
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
